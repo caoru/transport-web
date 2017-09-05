@@ -7,19 +7,19 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [{
-          cwd: './src/vendor/',
+          cwd: './src/assets/vendor/',
           dest: './dist/vendor/',
           expand: true,
           src: '**/*'
         },
         {
-          cwd: './src/css/',
+          cwd: './src/assets/css/',
           dest: './dist/css/',
           expand: true,
           src: '**/*'
         },
         {
-          cwd: './src/js/',
+          cwd: './src/assets/js/',
           dest: './dist/js/',
           expand: true,
           src: '**/*'
@@ -38,13 +38,23 @@ module.exports = function (grunt) {
 
     assemble: {
       options: {
-        layout: 'page.hbs',
+        flatten: true,
         layoutdir: './src/layouts/',
         partials: './src/partials/**/*.hbs'
       },
-      contents: {
+      page: {
+        options: { layout: 'page.hbs' },
         files: [{
-          cwd: './src/contents/',
+          cwd: './src/contents/page/',
+          dest: './dist/',
+          expand: true,
+          src: '**/*.hbs'
+        }]
+      },
+      login: {
+        options: { layout: 'login.hbs' },
+        files: [{
+          cwd: './src/contents/login/',
           dest: './dist/',
           expand: true,
           src: '**/*.hbs'

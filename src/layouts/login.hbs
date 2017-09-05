@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    {{>meta}}
+
+    <title>{{title}}</title>
+
+    {{>stylesheet}}
+  </head>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+    {{>navigator}}
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">My Dashboard</li>
+        </ol>
+
+        {{>body}}
+
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    {{>footer}}
+
+    {{>layout-modal}}
+
+    {{>scripts}}
+  </body>
+</html>
+
