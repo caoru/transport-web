@@ -23,6 +23,12 @@ module.exports = function (grunt) {
           dest: './dist/js/',
           expand: true,
           src: '**/*'
+        },
+        {
+          cwd: './src/contents/page/handlebars/',
+          dest: './dist/handlebars/',
+          expand: true,
+          src: '**/*.handlebars'
         }]
       }
     },

@@ -18,9 +18,11 @@
         <!-- Breadcrumbs -->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
+            <a href="#">{{menu1}}</a>
           </li>
-          <li class="breadcrumb-item active">My Dashboard</li>
+          {{#if menu2}}
+          <li class="breadcrumb-item active">{{menu2}}</li>
+          {{/if}}
         </ol>
 
         {{>body}}

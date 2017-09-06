@@ -1,0 +1,16 @@
+---
+title: "Bays :: Transport"
+menu1: "Management"
+menu2: "Bays"
+---
+
+<div id="baysDiv"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    retriveData('#baysDiv', 'baysTemplate.handlebars', 'bays');
+  });
+</script>
+
+{{>check-login}}
+

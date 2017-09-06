@@ -1,0 +1,34 @@
+
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-table"></i>
+      Cars
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" width="100%" id="carsTable" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No</td>
+            <th>Name</td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>No</td>
+            <th>Name</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          {{#cars}}
+          <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+          </tr>
+          {{/cars}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

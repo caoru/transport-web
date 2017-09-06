@@ -1,0 +1,43 @@
+
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-table"></i>
+      Users
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" width="100%" id="usersTable" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No</td>
+            <th>Name</td>
+            <th>Cellular</td>
+            <th>Company</td>
+            <th>Role</td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>No</td>
+            <th>Name</td>
+            <th>Cellular</td>
+            <th>Company</td>
+            <th>Role</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          {{#users}}
+          <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{cellular_phone}}</td>
+            <td>{{company_id}}</td>
+            <td>{{role_id}}</td>
+          </tr>
+          {{/users}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

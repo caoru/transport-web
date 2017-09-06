@@ -1,0 +1,16 @@
+---
+title: "Cars :: Transport"
+menu1: "Management"
+menu2: "Cars"
+---
+
+<div id="carsDiv"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    retriveData('#carsDiv', 'carsTemplate.handlebars', 'cars');
+  });
+</script>
+
+{{>check-login}}
+

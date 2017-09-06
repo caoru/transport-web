@@ -1,0 +1,16 @@
+---
+title: "Items :: Transport"
+menu1: "Management"
+menu2: "Items"
+---
+
+<div id="itemsDiv"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    retriveData('#itemsDiv', 'itemsTemplate.handlebars', 'items');
+  });
+</script>
+
+{{>check-login}}
+

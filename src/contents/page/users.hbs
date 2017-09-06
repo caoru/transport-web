@@ -1,0 +1,16 @@
+---
+title: "Users :: Transport"
+menu1: "Management"
+menu2: "Users"
+---
+
+<div id="usersDiv"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    retriveData('#usersDiv', 'usersTemplate.handlebars', 'users');
+  });
+</script>
+
+{{>check-login}}
+
