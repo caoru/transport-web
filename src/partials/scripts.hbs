@@ -15,9 +15,8 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    var obj = $("#menu1" + "{{menu1}}");
+    var obj = $("#menu1" + "{{menu1_id}}");
     obj.addClass("active");
-    console.log(obj);
-    console.log(obj.html());
+    obj.find('ul').addClass("show");
   });
 </script>

@@ -193,8 +193,10 @@ body.fixed-nav {
 @media (min-width: 992px) {
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
     background: #343a40; }
-    #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+    #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a.nav-link {
       color: white !important;
+      background-color: #495057; }
+    #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
       background-color: #495057; }
       #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
         color: white; }

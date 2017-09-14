@@ -2,30 +2,30 @@
 <div class="card mb-3">
   <div class="card-header">
     <i class="fa fa-table"></i>
-      Cars
+      짐
   </div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" width="100%" id="carsTable" cellspacing="0">
         <thead>
           <tr>
-            <th>No</td>
-            <th>Name</td>
+            <th>번호</td>
+            <th>이름</td>
           </tr>
         </thead>
         <tfoot>
           <tr>
-            <th>No</td>
-            <th>Name</td>
+            <th>번호</td>
+            <th>이름</td>
           </tr>
         </tfoot>
         <tbody>
-          {{#cars}}
+          {{#bays}}
           <tr>
             <td>{{id}}</td>
             <td>{{name}}</td>
           </tr>
-          {{/cars}}
+          {{/bays}}
         </tbody>
       </table>
     </div>
